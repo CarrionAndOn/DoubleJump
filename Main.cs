@@ -21,6 +21,7 @@ namespace DoubleJump
             _doubleJump = new DoubleJump();
             SetupBonemenu();
             Preferences.Setup();
+            Enabled = Preferences.autoEnable;
         }
         [HarmonyPatch(typeof(Player_Health), "MakeVignette")]
         public static class VignettePatch
