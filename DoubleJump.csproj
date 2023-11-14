@@ -36,10 +36,9 @@
         <StartupObject/>
     </PropertyGroup>
     <ItemGroup>
-        <Compile Include="DoubleJump.cs" />
         <Compile Include="Main.cs"/>
-        <Compile Include="ModPref.cs" />
-        <Compile Include="Preferences.cs" />
+        <Compile Include="Melon\ModPref.cs" />
+        <Compile Include="Melon\Preferences.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>

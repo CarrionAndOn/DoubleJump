@@ -1,7 +1,7 @@
 ﻿using MelonLoader;
 using MelonLoader.Preferences;
 
-namespace DoubleJump
+namespace DoubleJump.Melon
 {
     public class ModPref<T>
     {

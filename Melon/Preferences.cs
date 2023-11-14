@@ -1,6 +1,6 @@
 ﻿using MelonLoader;
 
-namespace DoubleJump
+namespace DoubleJump.Melon
 {
     internal static class Preferences
     {
