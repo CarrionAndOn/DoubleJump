@@ -32,9 +32,10 @@ namespace DoubleJump
             }
         }
         public static bool Enabled = false;
-        private void SetupBonemenu()
+        private static void SetupBonemenu()
         {
-            MenuCategory menuCategory = MenuManager.CreateCategory("Double Jump", Color.magenta);
+            MenuCategory mainCat = MenuManager.CreateCategory("Weather Electric", "6FBDFF");
+            MenuCategory menuCategory = mainCat.CreateCategory("Double Jump", Color.magenta);
             menuCategory.CreateFunctionElement("Enable", Color.green, _doubleJump.Enable);
             menuCategory.CreateFunctionElement("Disable", Color.red, _doubleJump.Disable);
             menuCategory.CreateBoolElement("Auto Enable", Color.yellow, Enabled, delegate(bool value)
