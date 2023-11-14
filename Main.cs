@@ -14,7 +14,7 @@ namespace DoubleJump
         internal const string Description = "Reenables the double jump feature in BONELAB."; // Required
         internal const string Author = "SoulWithMae"; // Required
         internal const string Company = "Weather Electric"; // Set as null if blank
-        internal const string Version = "1.0.0"; // Required
+        internal const string Version = "1.0.1"; // Required
         internal const string DownloadLink = "null"; // Set as null if blank
         
         public override void OnInitializeMelon()
