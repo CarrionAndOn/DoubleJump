@@ -37,6 +37,7 @@
     </PropertyGroup>
     <ItemGroup>
         <Compile Include="Main.cs"/>
+        <Compile Include="Melon\ModConsole.cs" />
         <Compile Include="Melon\ModPref.cs" />
         <Compile Include="Melon\Preferences.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
