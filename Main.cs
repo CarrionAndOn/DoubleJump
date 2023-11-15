@@ -22,7 +22,7 @@ namespace DoubleJump
             SetupBonemenu();
             ModConsole.Setup(LoggerInstance);
             Preferences.Setup();
-            _enabled = Preferences.AutoEnable;
+            _enabled = Preferences.AutoEnable.Value;
         }
         [HarmonyPatch(typeof(Player_Health), "MakeVignette")]
         public static class VignettePatch
@@ -31,7 +31,7 @@ namespace DoubleJump
             {
                 if (_enabled)
                 {
-                    ModConsole.Msg("Enabling double jump automatically", LoggingMode.DEBUG);
+                    ModConsole.Msg("Enabling double jump automatically", 1);
                     Player.remapRig.doubleJump = true;
                 }
             }
@@ -50,19 +50,19 @@ namespace DoubleJump
         private static void OnBoolChanged(bool value)
         {
             _enabled = value;
-            Preferences.AutoEnable.entry.Value = value;
+            Preferences.AutoEnable.Value = value;
             Preferences.OwnCategory.SaveToFile();
         }
 
         private static void Enable()
         {
-            ModConsole.Msg("Enabling double jump", LoggingMode.DEBUG);
+            ModConsole.Msg("Enabling double jump", 1);
             Player.remapRig.doubleJump = true;
         }
 
         private static void Disable()
         {
-            ModConsole.Msg("Disabling double jump", LoggingMode.DEBUG);
+            ModConsole.Msg("Disabling double jump", 1);
             Player.remapRig.doubleJump = false;
         }
     }
