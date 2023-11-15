@@ -14,8 +14,8 @@ namespace DoubleJump
         internal const string Description = "Reenables the double jump feature in BONELAB."; // Required
         internal const string Author = "SoulWithMae"; // Required
         internal const string Company = "Weather Electric"; // Set as null if blank
-        internal const string Version = "1.0.1"; // Required
-        internal const string DownloadLink = "null"; // Set as null if blank
+        internal const string Version = "1.0.2"; // Required
+        internal const string DownloadLink = "https://bonelab.thunderstore.io/package/CarrionAndOn/DoubleJump/"; // Set as null if blank
         
         public override void OnInitializeMelon()
         {
@@ -38,8 +38,8 @@ namespace DoubleJump
         private static bool _enabled = false;
         private static void SetupBonemenu()
         {
-            MenuCategory mainCat = MenuManager.CreateCategory("Weather Electric", "6FBDFF");
-            MenuCategory menuCategory = mainCat.CreateCategory("Double Jump", Color.magenta);
+            MenuCategory mainCat = MenuManager.CreateCategory("Weather Electric", "#6FBDFF");
+            MenuCategory menuCategory = mainCat.CreateCategory("Double Jump", "#fe9500");
             menuCategory.CreateFunctionElement("Enable", Color.green, Enable);
             menuCategory.CreateFunctionElement("Disable", Color.red, Disable);
             menuCategory.CreateBoolElement("Auto Enable", Color.yellow, _enabled, delegate(bool value)
