@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using MelonLoader;
 
 [assembly: AssemblyTitle(DoubleJump.Main.Description)]
 [assembly: AssemblyDescription(DoubleJump.Main.Description)]
